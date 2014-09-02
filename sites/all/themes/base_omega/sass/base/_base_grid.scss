@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+}
+html, body {
+  height: 100%;
+}
+
+.l-page {
+  margin: 0 auto;
+  @include rem(margin-bottom, -($footer-height + $footer-margin));
+  width: 100%;
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $wrapper-padding;
+  min-height: 100%;
+}
+
+* html .l-page {
+  height: 100%;
+}
+
+.l-content {
+  width: width-per($base-width - ($aside-width*2 + $gutter-width*2) );
+  margin: 0 width-per($gutter-width);
+  float: left;
+}
+
+aside {
+  width: width-per($aside-width);
+  float: left;
+}
+
+.l-footer {
+  @include rem(height, $footer-height);
+  @include rem(margin-top, $footer-margin);
+  clear: both;
+  width: 100%;
+  .l-region {
+    margin: 0 auto;
+    min-width: $min-width;
+    max-width: $max-width;
+    padding: 0 $wrapper-padding;
+  }
+}

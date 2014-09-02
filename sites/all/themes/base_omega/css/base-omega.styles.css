@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* colors */
+/* grid */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\000031}}
+html {
+  font-size: 62.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\000034}}
+html, body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\000038}}
+.l-page {
+  margin: 0 auto;
+  margin-bottom: -124px;
+  margin-bottom: -12.4rem;
+  width: 100%;
+  min-width: 800px;
+  max-width: 1400px;
+  padding: 0 5px;
+  min-height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\0000318}}
+* html .l-page {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\0000322}}
+.l-content {
+  width: 56.83453%;
+  margin: 0 1.02775%;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\0000328}}
+aside {
+  width: 20.55498%;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\0000333}}
+.l-footer {
+  height: 102px;
+  height: 10.2rem;
+  margin-top: 22px;
+  margin-top: 2.2rem;
+  clear: both;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/artem\/www\/easy-fix\.dev\/sites\/all\/themes\/base_omega\/sass\/base\/_base_grid\.scss}line{font-family:\0000338}}
+.l-footer .l-region {
+  margin: 0 auto;
+  min-width: 800px;
+  max-width: 1400px;
+  padding: 0 5px;
+}
+
+/* ВОТ ТУТ ПИСАТЬ CSS))))) */

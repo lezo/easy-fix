@@ -1,0 +1,208 @@
+<?php
+
+// hook_menu()
+function russian_easy_translate_menu() {
+	$items['admin/config/regional/russian_translate'] = array(
+		'title' => 'Russian Easy Translate',
+		'description' => 'Translate all modules to russian language',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('russian_easy_translate_modules_form'),
+		'access arguments' => array('administer site configuration'),
+		'type' => MENU_NORMAL_ITEM,
+	);
+	$items['admin/config/regional/russian_translate/confirm'] = array(
+		'title' => 'Russian Easy Translate',
+		'description' => 'Translate all modules to russian language',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('russian_easy_translate_modules_form_submit'),
+		'access arguments' => array('administer site configuration'),
+		'type' => MENU_CALLBACK,
+	);
+	$items['admin/config/regional/russian_translate/finish'] = array(
+		'title' => 'Russian Easy Translate',
+		'description' => 'Translate all modules to russian language',
+		'page callback' => 'russian_easy_translate_batch_finished_page',
+		'access arguments' => array('administer site configuration'),
+		'type' => MENU_CALLBACK,
+	);
+	
+	
+	
+	return $items;
+}
+
+// Translate form
+function russian_easy_translate_modules_form($form, $form_state = array()) {
+	drupal_add_js(drupal_get_path('module', 'russian_easy_translate') . '/check.js', array('weight' => 1));
+	
+	$files = system_rebuild_module_data();
+
+	// Remove hidden modules from display list.
+	$visible_files = $files;
+	foreach ($visible_files as $filename => $file) {
+		if (!empty($file->info['hidden'])) {
+			unset($visible_files[$filename]);
+		}
+	}
+
+	$modules = array();
+	$form['modules'] = array('#tree' => TRUE);
+	
+	// Used when displaying modules that are required by the install profile.
+	require_once DRUPAL_ROOT . '/includes/install.inc';
+	$distribution_name = check_plain(drupal_install_profile_distribution_name());
+
+	foreach ($visible_files as $filename => $module) {
+		$extra = array();
+		$extra['enabled'] = FALSE;
+		if ($module->info['package'] != 'Core') $module->info['package'] = ((bool) $module->status ? 'Enabled Modules' : 'Disabled Modules');
+		$form['modules'][$module->info['package']][$filename] = russian_easy_translate_module_row($module->info, $extra);
+	}
+
+	// Add basic information to the fieldsets.
+	foreach (element_children($form['modules']) as $package) {
+		$form['modules'][$package] += array(
+			'#id' => 'edit-modules-' . strtolower(str_replace(' ', '-', $package)),
+			'#type' => 'fieldset',
+			'#title' => t($package),
+			'#collapsible' => TRUE,
+			'#collapsed' => $package != 'Enabled Modules' ? TRUE : FALSE,
+			'#theme' => 'russian_easy_translate_modules_fieldset',
+			'#weight' => $package == 'Core' ? -10 : NULL,
+			'#header' => array('', t('Name'), t('Version'), ),
+		);
+	}
+	uasort($form['modules'], 'element_sort_by_title');
+
+	$form['actions'] = array('#type' => 'actions');
+	$form['actions']['check_all'] = array(
+		'#type' => 'button',
+		'#value' => t('Check All'),	
+		'#attributes' => array( 'onclick' => 'checkAll("russian-easy-translate-modules-form"); if (this.value == "Uncheck All") this.value="Check All"; else this.value="Uncheck All"; return false;', ),
+	);
+	$form['actions']['submit'] = array(
+		'#type' => 'submit',
+		'#value' => t('Translate Selected'),
+	);
+	$form['#action'] = url('admin/config/regional/russian_translate/confirm');
+	return $form;
+}
+
+
+
+
+
+
+
+// Translate form submit
+function russian_easy_translate_modules_form_submit($form, $form_state) {
+	$modules = array();
+	$operations = array();
+	foreach ($form_state['input']['modules'] as $type) {
+		foreach ($type as $name => $module) {
+			$path = drupal_get_path('module', $name) . '/' . $name . '.info';
+			$info = drupal_parse_info_file($path);
+			$modules[$name] = $info['version'];
+			$operations[] = array('russian_easy_translate_batch_translate', array(array('version' => $info['version'], 'name' => $name)));
+		}
+	}
+	// print_r($modules);
+	$batch = array(
+		'operations' => $operations,
+		'finished' => 'russian_easy_translate_batch_finished',
+		'title' => t('Translate process'),
+	);
+	// print_r($operations);
+	batch_set($batch);
+	// batch_process();
+	batch_process('admin/config/regional/russian_translate/finish');
+}
+function russian_easy_translate_batch_finished_page() {
+	return 'Finished';
+}
+
+function russian_easy_translate_batch_translate($params, &$context) {
+	$context['results'][] = $params['name'] . ' (v' . $params['version'] . ')';
+
+	$langcode = 'ru';
+	$module_name = $params['name'];
+	$module_version = $params['version'];
+	$url = implode('/', array('http:/', 'drupaler.ru', 'admin/live-translation/export', $module_name, $module_version, $langcode, 0));
+
+	if (!$po = drupal_http_request($url)) {
+		$context['message']  = t('Unable to download %link file.', array('%link' => $file_url));
+		return;
+	}
+	
+	if ($po->data == '') {
+		$context['message']  = t('%module has no translate.', array('%module' => $module_name));
+		return;
+	}
+  
+	$filename = 'translation_import.po';
+	$file = file_directory_temp() .'/'. $filename;
+	if (!file_put_contents($file, $po->data)) {
+		$context['message']  = t('Unable to save %link file', array('%link' => $file_url));
+		return;
+	}
+
+	include_once './includes/locale.inc';
+	$mode = LOCALE_IMPORT_OVERWRITE;
+	$group = 'default';
+
+	$file_obj = new stdClass();
+	$file_obj->uri = $file;
+	$file_obj->filename = $filename;
+	if (_locale_import_po($file_obj, $langcode, $mode, $group) == FALSE) {
+		$context['message'] = t('The translation import failed');
+		return;
+    }
+	
+	$context['message']  = t('Module translated <em>%name</em>', array('%name' => $name));
+}
+
+function russian_easy_translate_batch_finished($success, $results, $operations) {
+	if ($success) {
+		drupal_set_message(count($results) . ' modules were translated:' . theme('item_list', array('items' => $results)));
+	} else {
+		drupal_set_message('An error was occured while batch translating', 'error');
+	}
+}
+
+
+// hook_theme()
+function russian_easy_translate_theme() {
+	return array_merge(drupal_common_theme(), array( 'russian_easy_translate_modules_fieldset' => array( 'render element' => 'form', ), ));
+}
+
+
+// Returns HTML for table
+function theme_russian_easy_translate_modules_fieldset($variables) {
+	$form = $variables['form'];
+	$rows = array();
+	foreach (element_children($form) as $key) {
+		$module = $form[$key];
+		$row = array();
+		unset($module['enable']['#title']);
+		$row[] = array('class' => array('checkbox'), 'data' => drupal_render($module['enable']));
+		$row[] = '<strong>' . drupal_render($module['name']) . '</strong>'; //<br/><small>' . drupal_render($module['description']) . '</small>';
+		$row[] = drupal_render($module['version']);
+		$rows[] = $row;
+	}
+	return theme('table', array('header' => $form['#header'], 'rows' => $rows));
+}
+
+
+// Build a table row
+function russian_easy_translate_module_row($info, $extra) {
+	$form = array( '#tree' => TRUE, );
+	$form['name'] = array( '#markup' => $info['name'], );
+	$form['description'] = array( '#markup' => t($info['description']), );
+	$form['version'] = array( '#markup' => $info['version'], );
+	$form['enable'] = array(
+		'#type' => 'checkbox',
+		'#title' => t('Enable'),
+		'#default_value' => $extra['enabled'],
+	);
+	return $form;
+}

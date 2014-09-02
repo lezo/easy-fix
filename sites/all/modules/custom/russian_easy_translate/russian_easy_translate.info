@@ -1,0 +1,6 @@
+name = Russian Easy Translate
+description = Small module that install translate to all installed modules
+version = 7.x-1.x
+core = 7.x
+package = Locale
+files[] = russian_easy_translate.module
