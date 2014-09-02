@@ -1,0 +1,2631 @@
+# Russian translation of webform (7.x-3.20)
+# Copyright (c) 2014 by the Russian translation team
+# Generated from files:
+#  webform/includes/webform.admin.inc: n/a
+#  webform/includes/webform.pages.inc: n/a
+#  webform/webform.module: n/a
+#  webform/components/date.inc: n/a
+#  webform/views/webform_handler_field_submission_link.inc: n/a
+#  webform/includes/webform.components.inc: n/a
+#  webform/includes/webform.emails.inc: n/a
+#  webform/includes/webform.report.inc: n/a
+#  webform/components/email.inc: n/a
+#  webform/components/number.inc: n/a
+#  webform/components/textarea.inc: n/a
+#  webform/components/textfield.inc: n/a
+#  webform/includes/webform.submissions.inc: n/a
+#  webform/views/webform.views.inc: n/a
+#  webform/views/webform_handler_filter_is_draft.inc: n/a
+#  webform/views/webform_handler_filter_webform_status.inc: n/a
+#  webform/views/webform_handler_field_webform_status.inc: n/a
+#  webform/components/file.inc: n/a
+#  webform/includes/webform.options.inc: n/a
+#  webform/components/time.inc: n/a
+#  webform/components/markup.inc: n/a
+#  webform/components/select.inc: n/a
+#  webform/components/hidden.inc: n/a
+#  webform/components/grid.inc: n/a
+#  webform/views/webform_handler_field_is_draft.inc: n/a
+#  webform/views/webform_handler_field_node_link_results.inc: n/a
+#  webform/components/fieldset.inc: n/a
+#  webform/templates/webform-mail.tpl.php: n/a
+#  webform/webform.install: n/a
+#  webform/webform.info: n/a
+#  webform/templates/webform-confirmation.tpl.php: n/a
+#  webform/templates/webform-results-submissions.tpl.php: n/a
+#  webform/templates/webform-submission-information.tpl.php: n/a
+#  webform/templates/webform-submission-navigation.tpl.php: n/a
+#  webform/includes/webform.export.inc: n/a
+#  webform/templates/webform-calendar.tpl.php: n/a
+#  webform/views/webform_handler_field_node_link_edit.inc: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: webform (7.x-3.20)\n"
+"POT-Creation-Date: 2014-09-01 13:51+0400\n"
+"PO-Revision-Date: 2012-12-28 23:59+0400\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+
+#: includes/webform.admin.inc:98
+msgid "Advanced options"
+msgstr "Дополнительные настройки"
+
+#: includes/webform.pages.inc:240
+msgid "Save configuration"
+msgstr "Сохранить настройки"
+
+#: webform.module:2275; components/date.inc:282
+msgid "!name field is required."
+msgstr "Поле !name обязательно для заполнения."
+
+#: webform.module:2280
+msgid ""
+"!name cannot be longer than %max characters but is currently %length "
+"characters long."
+msgstr ""
+"!name не может быть более %max знаков, "
+"сейчас его длина %length знаков."
+
+#: webform.module:2294,2300
+msgid ""
+"An illegal choice has been detected. Please contact the site "
+"administrator."
+msgstr ""
+"Сделан недопустимый выбор. "
+"Пожалуйста, обратитесь к "
+"администратору сайта."
+
+#: webform.module:2295
+msgid "Illegal choice %choice in !name element."
+msgstr "Неверный выбор %choice в элементе !name."
+
+#: webform.module:2301
+msgid "Illegal choice %choice in %name element."
+msgstr "Недопустимый выбор %choice в элементе %name."
+
+#: views/webform_handler_field_submission_link.inc:83
+msgid "delete"
+msgstr "удалить"
+
+#: includes/webform.admin.inc:207
+msgid "Enabled"
+msgstr "Включено"
+
+#: includes/webform.admin.inc:258; includes/webform.components.inc:168; includes/webform.emails.inc:97; includes/webform.report.inc:152
+msgid "Operations"
+msgstr "Действия"
+
+#: views/webform_handler_field_submission_link.inc:78
+msgid "edit"
+msgstr "изменить"
+
+#: webform.module:306; includes/webform.admin.inc:257; includes/webform.report.inc:54
+msgid "View"
+msgstr "Просмотр"
+
+#: includes/webform.report.inc:600,600
+msgid "none"
+msgstr "нет"
+
+#: includes/webform.admin.inc:256
+msgid "Title"
+msgstr "Заголовок"
+
+#: includes/webform.admin.inc:207; includes/webform.components.inc:403
+msgid "Description"
+msgstr "Описание"
+
+#: webform.module:1995,2011,2348
+msgid "Submit"
+msgstr "Отправить"
+
+#: components/email.inc:82; components/number.inc:105; components/textarea.inc:87; components/textfield.inc:92
+msgid "Disabled"
+msgstr "Отключено"
+
+#: includes/webform.components.inc:69,168,505
+msgid "Weight"
+msgstr "Вес"
+
+#: includes/webform.report.inc:294; includes/webform.submissions.inc:354,472
+msgid "Cancel"
+msgstr "Отменить"
+
+#: includes/webform.components.inc:495
+msgid "Parent"
+msgstr "Родитель"
+
+#: includes/webform.emails.inc:217
+msgid "Custom"
+msgstr "Собственная"
+
+#: includes/webform.emails.inc:97; includes/webform.submissions.inc:524
+msgid "Subject"
+msgstr "Заголовок"
+
+#: webform.module:850; includes/webform.report.inc:378,684
+msgid "Time"
+msgstr "Время"
+
+#: webform.module:742
+msgid "E-mail"
+msgstr "E-mail"
+
+#: views/webform.views.inc:24,31; views/webform_handler_filter_is_draft.inc:14; views/webform_handler_filter_webform_status.inc:10
+msgid "Status"
+msgstr "Статус"
+
+#: views/webform_handler_field_webform_status.inc:27
+msgid "Yes"
+msgstr "Да"
+
+#: views/webform_handler_field_webform_status.inc:27
+msgid "No"
+msgstr "Нет"
+
+#: components/file.inc:289
+msgid "Category"
+msgstr "Категория"
+
+#: includes/webform.emails.inc:97
+msgid "From"
+msgstr "От"
+
+#: webform.module:253; includes/webform.admin.inc:267
+msgid "Table"
+msgstr "Таблица"
+
+#: components/file.inc:471; includes/webform.admin.inc:207
+msgid "Name"
+msgstr "Имя"
+
+#: includes/webform.options.inc:45
+msgid "Wednesday"
+msgstr "Среда"
+
+#: includes/webform.options.inc:46
+msgid "Thursday"
+msgstr "Четверг"
+
+#: includes/webform.options.inc:47
+msgid "Friday"
+msgstr "Пятница"
+
+#: includes/webform.options.inc:48
+msgid "Saturday"
+msgstr "Суббота"
+
+#: includes/webform.options.inc:42
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: includes/webform.options.inc:43
+msgid "Monday"
+msgstr "Понедельник"
+
+#: includes/webform.options.inc:44
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: components/time.inc:171
+msgid "am"
+msgstr "утра"
+
+#: components/time.inc:171
+msgid "pm"
+msgstr "после полудня"
+
+#: includes/webform.components.inc:507
+msgid ""
+"Optional. In the menu, the heavier items will sink and the lighter "
+"items will be positioned nearer the top."
+msgstr ""
+"Опционально. Более тяжелые пункты в "
+"меню будут опускаться вниз, а легкие "
+"подниматься наверх."
+
+#: includes/webform.components.inc:168
+msgid "Type"
+msgstr "Тип"
+
+#: includes/webform.pages.inc:95,127
+msgid "Unlimited"
+msgstr "Не ограничено"
+
+#: webform.module:3579
+msgid "Home"
+msgstr "Главная"
+
+#: includes/webform.pages.inc:156,156; views/webform_handler_field_webform_status.inc:34,34; views/webform_handler_filter_webform_status.inc:11,11
+msgid "Closed"
+msgstr "Закрыто"
+
+#: webform.module:212
+msgid "Results"
+msgstr "Результаты"
+
+#: includes/webform.report.inc:149,195; views/webform.views.inc:84
+msgid "User"
+msgstr "Пользователь"
+
+#: components/markup.inc:32; includes/webform.components.inc:168
+msgid "Value"
+msgstr "Значение"
+
+#: components/file.inc:289
+msgid "Types"
+msgstr "Типы"
+
+#: components/select.inc:115,158
+msgid "Multiple"
+msgstr "Множественная"
+
+#: includes/webform.report.inc:382,688
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: components/number.inc:511
+msgid "Count"
+msgstr "Количество"
+
+#: includes/webform.report.inc:109
+msgid "All"
+msgstr "Все"
+
+#: includes/webform.components.inc:448
+msgid "Private"
+msgstr "Приватно"
+
+#: includes/webform.components.inc:141
+msgid "Save"
+msgstr "Сохранить"
+
+#: includes/webform.components.inc:132; includes/webform.emails.inc:76
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/webform.components.inc:227
+msgid "Clone"
+msgstr "Клонировать"
+
+#: includes/webform.components.inc:168,381
+msgid "Label"
+msgstr "Метка"
+
+#: includes/webform.components.inc:556
+msgid "Operator"
+msgstr "Оператор"
+
+#: webform.module:1795
+msgid "Teaser"
+msgstr "Краткое содержание"
+
+#: includes/webform.pages.inc:189
+msgid "Advanced settings"
+msgstr "Расширенные настройки"
+
+#: includes/webform.components.inc:424
+msgid "Above"
+msgstr "Выше"
+
+#: includes/webform.components.inc:425
+msgid "Inline"
+msgstr "В линию"
+
+#: components/date.inc:59; components/email.inc:53; components/hidden.inc:44; components/number.inc:64; components/select.inc:149; components/textarea.inc:52; components/textfield.inc:53; components/time.inc:56
+msgid "Default value"
+msgstr "Значение по умолчанию"
+
+#: components/number.inc:179
+msgid "Maximum"
+msgstr "Максимум"
+
+#: webform.module:774
+msgid "Hidden"
+msgstr "Скрытый"
+
+#: components/file.inc:121
+msgid "Archives"
+msgstr "Архивы"
+
+#: includes/webform.emails.inc:52
+msgid "Address"
+msgstr "Адрес"
+
+#: views/webform_handler_filter_is_draft.inc:15
+msgid "Completed"
+msgstr "Завершено"
+
+#: webform.module:263; includes/webform.admin.inc:268; includes/webform.report.inc:448
+msgid "Download"
+msgstr "Скачать"
+
+#: components/number.inc:124
+msgid "Thousands separator"
+msgstr "Разделитель тысяч"
+
+#: includes/webform.options.inc:75
+msgid "American Samoa"
+msgstr "Американское Самоа"
+
+#: includes/webform.options.inc:84
+msgid "Georgia"
+msgstr "Грузия"
+
+#: includes/webform.options.inc:85
+msgid "Guam"
+msgstr "о-в Гуам"
+
+#: includes/webform.options.inc:95
+msgid "Marshall Islands"
+msgstr "Маршалловы острова"
+
+#: includes/webform.options.inc:117
+msgid "Puerto Rico"
+msgstr "Пуэрто-Рико"
+
+#: includes/webform.options.inc:115
+msgid "Palau"
+msgstr "Палау"
+
+#: includes/webform.components.inc:479
+msgid "Position"
+msgstr "Позиция"
+
+#: components/time.inc:163
+msgid "hour"
+msgstr "час"
+
+#: components/time.inc:164
+msgid "minute"
+msgstr "минута"
+
+#: components/number.inc:76
+msgid "Select list"
+msgstr "Выпадающий список"
+
+#: components/number.inc:75
+msgid "Text field"
+msgstr "Текстовая строка"
+
+#: components/grid.inc:81,114
+msgid "Questions"
+msgstr "Вопросы"
+
+#: includes/webform.report.inc:150,196,380,686
+msgid "IP Address"
+msgstr "IP адрес"
+
+#: includes/webform.report.inc:381
+msgid "User ID"
+msgstr "ID Пользователя"
+
+#: components/email.inc:73; components/textarea.inc:61; components/textfield.inc:62
+msgid "Width"
+msgstr "Ширина"
+
+#: components/textarea.inc:70
+msgid "Height"
+msgstr "Высота"
+
+#: includes/webform.components.inc:412
+msgid "Display"
+msgstr "Показать"
+
+#: includes/webform.admin.inc:74
+msgid "Format"
+msgstr "Формат"
+
+#: includes/webform.admin.inc:60
+msgid "From name"
+msgstr "От"
+
+#: webform.module:841
+msgid "Textfield"
+msgstr "Текстовое поле"
+
+#: includes/webform.emails.inc:259
+msgid "Custom template"
+msgstr "Дополнительный шаблон"
+
+#: components/textfield.inc:110
+msgid "Maxlength"
+msgstr "Максимальная длина"
+
+#: components/time.inc:74
+msgid "Time format"
+msgstr "Формат времени"
+
+#: components/hidden.inc:149
+msgid "Empty"
+msgstr "Пусто"
+
+#: webform.module:764
+msgid "Grid"
+msgstr "Сетка"
+
+#: webform.module:2295,2301
+msgid "form"
+msgstr "форма"
+
+#: includes/webform.pages.inc:30
+msgid "Submission settings"
+msgstr "Настройка оповещения"
+
+#: components/number.inc:129; components/select.inc:62; includes/webform.components.inc:426
+msgid "None"
+msgstr "Нет"
+
+#: components/select.inc:662; views/webform_handler_field_submission_link.inc:73
+msgid "view"
+msgstr "просмотреть"
+
+#: webform.module:328; includes/webform.components.inc:228,714; includes/webform.emails.inc:108,485; includes/webform.report.inc:63; includes/webform.submissions.inc:354
+msgid "Delete"
+msgstr "Удалить"
+
+#: webform.module:317; includes/webform.admin.inc:269; includes/webform.components.inc:226; includes/webform.emails.inc:107; includes/webform.report.inc:59
+msgid "Edit"
+msgstr "Редактировать"
+
+#: components/date.inc:193
+msgid "Month"
+msgstr "Месяц"
+
+#: webform.module:734
+msgid "Date"
+msgstr "Дата"
+
+#: includes/webform.pages.inc:156; views/webform_handler_field_webform_status.inc:34; views/webform_handler_filter_webform_status.inc:11
+msgid "Open"
+msgstr "Открыто"
+
+#: components/date.inc:199,226
+msgid "Year"
+msgstr "Год"
+
+#: components/date.inc:196
+msgid "Day"
+msgstr "День"
+
+#: components/grid.inc:61,102; components/select.inc:103,131
+msgid "Options"
+msgstr "Опции"
+
+#: views/webform_handler_field_is_draft.inc:16
+msgid "completed"
+msgstr "завершено"
+
+#: views/webform_handler_field_node_link_results.inc:25
+msgid "results"
+msgstr "результаты"
+
+#: components/time.inc:205
+msgid "Hour"
+msgstr "Час"
+
+#: components/time.inc:213
+msgid "Minute"
+msgstr "Минута"
+
+#: components/date.inc:96
+msgid "Start date"
+msgstr "Дата начала"
+
+#: components/date.inc:105
+msgid "End date"
+msgstr "Дата окончания"
+
+#: webform.module:861
+msgid "File"
+msgstr "Файл"
+
+#: webform.module:273; includes/webform.admin.inc:271; includes/webform.report.inc:294
+msgid "Clear"
+msgstr "Очистить"
+
+#: components/file.inc:113
+msgid "Media"
+msgstr "Медиа-файлы"
+
+#: components/fieldset.inc:34
+msgid "Collapsible"
+msgstr "Сворачиваемый"
+
+#: includes/webform.report.inc:145,193
+msgid "#"
+msgstr "#"
+
+#: components/number.inc:159
+msgid "Integer"
+msgstr "Целое число"
+
+#: includes/webform.admin.inc:243
+msgid "or"
+msgstr "или"
+
+#: views/webform.views.inc:72
+msgid "Node"
+msgstr "Материал"
+
+#: webform.module:802
+msgid "Number"
+msgstr "Число"
+
+#: includes/webform.admin.inc:53
+msgid "From address"
+msgstr "От"
+
+#: components/number.inc:168
+msgid "Minimum"
+msgstr "Минимум"
+
+#: includes/webform.admin.inc:76
+msgid "Plain text"
+msgstr "Простой текст"
+
+#: includes/webform.options.inc:23
+msgid "Countries"
+msgstr "Страны"
+
+#: components/number.inc:115
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: views/webform_handler_field_webform_status.inc:29
+msgid "True"
+msgstr "Истина"
+
+#: views/webform_handler_field_webform_status.inc:29
+msgid "False"
+msgstr "Ложь"
+
+#: components/file.inc:272
+msgid "select"
+msgstr "выбор"
+
+#: includes/webform.submissions.inc:459
+msgid "empty"
+msgstr "пусто"
+
+#: includes/webform.report.inc:687
+msgid "UID"
+msgstr "UID"
+
+#: includes/webform.emails.inc:258
+msgid "Default template"
+msgstr "Стандартный шаблон"
+
+#: includes/webform.emails.inc:193
+msgid "E-mail subject"
+msgstr "Тема письма"
+
+#: components/number.inc:516
+msgid "Range"
+msgstr "Диапазон"
+
+#: includes/webform.options.inc:125
+msgid "Virgin Islands"
+msgstr "Виргинские острова"
+
+#: includes/webform.components.inc:549; includes/webform.emails.inc:218
+msgid "Component"
+msgstr "Компонент"
+
+#: includes/webform.admin.inc:270
+msgid "Components"
+msgstr "Компоненты"
+
+#: includes/webform.report.inc:367
+msgid "Compact"
+msgstr "Компактный"
+
+#: views/webform_handler_field_webform_status.inc:31
+msgid "Off"
+msgstr "Выкл"
+
+#: components/time.inc:85
+msgid "1 minute"
+msgstr "1 минута"
+
+#: webform.module:905
+msgid "Download PDF"
+msgstr "Скачать PDF"
+
+#: includes/webform.emails.inc:246
+msgid "E-mail template"
+msgstr "Шаблон e-mail"
+
+#: webform.module:787
+msgid "Markup"
+msgstr "Разметка"
+
+#: views/webform_handler_field_webform_status.inc:31
+msgid "On"
+msgstr "Вкл"
+
+#: includes/webform.report.inc:146,194; views/webform.views.inc:112,119
+msgid "Submitted"
+msgstr "Отправлено"
+
+#: webform.module:3587,223,285; includes/webform.admin.inc:265
+msgid "Submissions"
+msgstr "Заполнение"
+
+#: webform.module:233,243; components/number.inc:202; includes/webform.admin.inc:266
+msgid "Analysis"
+msgstr "Анализ"
+
+#: includes/webform.report.inc:288
+msgid "Clear Form Submissions"
+msgstr "Очистить результаты заполнения форм"
+
+#: includes/webform.report.inc:292,292
+msgid "Are you sure you want to delete all submissions for this form?"
+msgstr ""
+"Уверены, что хотите удалить "
+"результаты?"
+
+#: includes/webform.report.inc:301
+msgid "Webform %title entries cleared."
+msgstr "Результаты заполнения  %title удалены."
+
+#: includes/webform.submissions.inc:342
+msgid "Are you sure you want to delete this submission?"
+msgstr ""
+"Уверены, что хотите удалить эту "
+"запись?"
+
+#: templates/webform-mail.tpl.php:30
+msgid "Submitted values are"
+msgstr "Отправленные значения:"
+
+#: includes/webform.components.inc:772
+msgid "webform"
+msgstr "опросник"
+
+#: includes/webform.report.inc:914
+msgid "Q"
+msgstr "Вопр."
+
+#: includes/webform.report.inc:915
+msgid "responses"
+msgstr "ответов"
+
+#: webform.module:3807,111; webform.install:428; webform.info:0; views/webform.views.inc:13,200,234,244,254
+msgid "Webform"
+msgstr "Веб-формы"
+
+#: webform.install:430
+msgid ""
+"Create a new form or questionnaire accessible to users. Submission "
+"results and statistics are recorded and accessible to privileged "
+"users."
+msgstr ""
+"Создайте новую форму или опросник. "
+"Результаты заполнения и статистика "
+"будет записана и передана для "
+"просмотра пользователям с "
+"соответствующими правами доступа."
+
+#: webform.module:80
+msgid "Webforms"
+msgstr "Опросники"
+
+#: webform.module:84
+msgid "View and edit all the available webforms on your site."
+msgstr "Просмотр всех опросников"
+
+#: webform.module:96
+msgid "Global configuration of webform functionality."
+msgstr ""
+"Глобальные настройки системы "
+"опросников"
+
+#: includes/webform.emails.inc:188
+msgid "E-mail to address"
+msgstr "Адрес Кому"
+
+#: includes/webform.emails.inc:203
+msgid "E-mail from name"
+msgstr "Имя отправителя"
+
+#: includes/webform.emails.inc:198
+msgid "E-mail from address"
+msgstr "От кого"
+
+#: includes/webform.pages.inc:109,141
+msgid "ever"
+msgstr "каждый (период времени)"
+
+#: includes/webform.pages.inc:110,142
+msgid "every hour"
+msgstr "каждый час"
+
+#: includes/webform.pages.inc:111,143
+msgid "every day"
+msgstr "каждый день"
+
+#: includes/webform.pages.inc:112,144
+msgid "every week"
+msgstr "каждую неделю"
+
+#: includes/webform.components.inc:258
+msgid "No Components, add a component below."
+msgstr ""
+"Компонент отсутствует, добавьте "
+"компонент ниже."
+
+#: includes/webform.components.inc:74,168,468
+msgid "Mandatory"
+msgstr "Обязательное"
+
+#: includes/webform.components.inc:392
+msgid "Field Key"
+msgstr "Ключ поля"
+
+#: includes/webform.components.inc:382
+msgid "This is used as a descriptive label when displaying this form element."
+msgstr ""
+"Это используется как подпись к "
+"элементу при отображении формы."
+
+#: includes/webform.components.inc:404
+msgid ""
+"A short description of the field used as help for the user when he/she "
+"uses the form."
+msgstr ""
+"Короткая подсказка пользователю, как "
+"заполнить это поле."
+
+#: includes/webform.components.inc:470
+msgid "Check this option if the user must enter a value."
+msgstr ""
+"Отметьте, если хотите сделать это поле "
+"обязательным."
+
+#: includes/webform.components.inc:487
+msgid "Root"
+msgstr "Корневая"
+
+#: includes/webform.components.inc:577
+msgid ""
+"The webform component of type @type does not have an edit function "
+"defined."
+msgstr ""
+"Для компонента опросника типа @type "
+"функция редактирования не определена."
+
+#: includes/webform.components.inc:632
+msgid ""
+"The field key %field_key is already in use by the field labeled "
+"%existing_field. Please use a unique key."
+msgstr ""
+"Ключ поля %field_key уже используется в "
+"поле  %existing_field. Используйте другой "
+"ключ."
+
+#: webform.module:1931
+msgid "Next Page >"
+msgstr "Следующая страница >"
+
+#: webform.module:1932
+msgid "< Previous Page"
+msgstr "<Предыдущая страница"
+
+#: webform.module:2190
+msgid "The webform component @type is not able to be displayed"
+msgstr ""
+"Невозможно отобразить компонент "
+"опросника @type"
+
+#: includes/webform.submissions.inc:257
+msgid "Illegal information. Data not submitted."
+msgstr ""
+"Неверная информация. Данные не "
+"приняты."
+
+#: templates/webform-confirmation.tpl.php:28; templates/webform-results-submissions.tpl.php:30
+msgid "Go back to the form"
+msgstr "Вернуться к форме"
+
+#: webform.info:0
+msgid "Enables the creation of forms and questionnaires."
+msgstr "Позволяет создание форм и опросников."
+
+#: components/date.inc:61; components/email.inc:55; components/hidden.inc:46; components/number.inc:66; components/textarea.inc:54; components/textfield.inc:55; components/time.inc:58
+msgid "The default value of the field."
+msgstr "Значение поля по умолчанию."
+
+#: webform.module:735
+msgid "Presents month, day, and year fields."
+msgstr "Поля дней, месяцев и лет"
+
+#: components/date.inc:393; components/email.inc:255; components/file.inc:444; components/textarea.inc:188; components/textfield.inc:225; components/time.inc:353
+msgid "Left Blank"
+msgstr "Оставить пустым"
+
+#: components/date.inc:394; components/email.inc:256; components/number.inc:438; components/textarea.inc:189; components/textfield.inc:226; components/time.inc:354
+msgid "User entered value"
+msgstr "Значение, введённое пользователем"
+
+#: components/email.inc:75; components/textfield.inc:64
+msgid "Width of the textfield."
+msgstr "Ширина текстового поля."
+
+#: components/email.inc:64
+msgid "User email as default"
+msgstr ""
+"Электронный адрес пользователя "
+"по-умолчанию"
+
+#: components/email.inc:66
+msgid ""
+"Set the default value of this field to the user email, if he/she is "
+"logged in."
+msgstr ""
+"В это поле автоматически пишется email "
+"зарегистрированного поетителя. Для "
+"анонимных размещений не играет роли."
+
+#: components/email.inc:84; components/number.inc:107; components/textarea.inc:89; components/textfield.inc:94
+msgid ""
+"Make this field non-editable. Useful for setting an unchangeable "
+"default value."
+msgstr ""
+"Запретить редактирование. Полезно для "
+"ввода и показа значения по-умолчанию"
+
+#: components/email.inc:257; components/hidden.inc:151; components/textarea.inc:190; components/textfield.inc:227
+msgid "Average submission length in words (ex blanks)"
+msgstr ""
+"Среднее количество слов в "
+"отправленном тексте ( включая пробелы)"
+
+#: components/fieldset.inc:36
+msgid ""
+"If this fieldset is collapsible, the user may open or close the "
+"fieldset."
+msgstr ""
+"Если отмечено, набор можно "
+"сворачивать или разворачивать "
+"нажатием на ссылку в заголовке набора"
+
+#: components/fieldset.inc:42
+msgid "Collapsed by Default"
+msgstr "Свёрнутое по умолчанию"
+
+#: components/fieldset.inc:44
+msgid ""
+"Collapsible fieldsets are \"open\" by default. Select this option to "
+"default the fieldset to \"closed.\""
+msgstr ""
+"Сворачиваемые группы полей "
+"по-умолчанию развёрнуты. Поставьте "
+"галочку, если хотите, чтобы наборы "
+"полей были по-умолчанию свёрнуты."
+
+#: components/file.inc:105
+msgid "Documents"
+msgstr "Документы"
+
+#: components/file.inc:445
+msgid "User uploaded file"
+msgstr "Файл, загруженный пользователем"
+
+#: components/file.inc:446
+msgid "Average uploaded file size"
+msgstr "Средний размер загружаемых файлов"
+
+#: components/hidden.inc:150
+msgid "Non-empty"
+msgstr "Не пустое"
+
+#: components/markup.inc:34
+msgid "Markup allows you to enter custom HTML or PHP logic into your form."
+msgstr ""
+"Разметка - разрешен  HTML или PHP в этом  "
+"поле."
+
+#: components/select.inc:160
+msgid ""
+"Check this option if the user should be allowed to choose multiple "
+"values."
+msgstr ""
+"Чтобы позволить пользователю "
+"отмечать несколько значений, "
+"поставьте галочку здесь."
+
+#: components/select.inc:167
+msgid "Listbox"
+msgstr "Выпадающий список"
+
+#: webform.module:823
+msgid "Allows creation of checkboxes, radio buttons, or select menus."
+msgstr ""
+"Позволяет создавать поля с галочками, "
+"радиокнопки или выпадающий список "
+"значений"
+
+#: webform.module:833
+msgid "A large text area that allows for multiple lines of input."
+msgstr ""
+"Большое текстовое поле, куда можно "
+"вводить значения в несколько рядов."
+
+#: webform.module:842
+msgid "Basic textfield type."
+msgstr "Простое текстовое поле."
+
+#: webform.module:851
+msgid "Presents the user with hour and minute fields. Optional am/pm fields."
+msgstr ""
+"Поля для ввода времени в формате "
+"\"часы\" и \"минуты\". Дополнительно "
+"можно ввести am/pm значения для времени."
+
+#: webform.module:3217,3218,3219,3228
+msgid "key"
+msgstr "ключ"
+
+#: includes/webform.report.inc:375; templates/webform-submission-information.tpl.php:16
+msgid "Submission information"
+msgstr "Информация о результате"
+
+#: webform.module:1790
+msgid "Display mode"
+msgstr "Режим отображения"
+
+#: includes/webform.admin.inc:77
+msgid "HTML"
+msgstr "HTML"
+
+#: webform.module:913
+msgid "Print"
+msgstr "Печать"
+
+#: includes/webform.report.inc:379,685; views/webform.views.inc:96; views/webform_handler_filter_is_draft.inc:15
+msgid "Draft"
+msgstr "Черновик"
+
+#: includes/webform.pages.inc:74
+msgid "Custom URL"
+msgstr "Пользовательский URL"
+
+#: includes/webform.report.inc:682
+msgid "Serial"
+msgstr "Последовательность"
+
+#: includes/webform.options.inc:90
+msgid "Iowa"
+msgstr "Айова"
+
+#: includes/webform.components.inc:460
+msgid "Validation"
+msgstr "Проверка"
+
+#: components/email.inc:91; components/number.inc:150; components/textfield.inc:101
+msgid "Unique"
+msgstr "Уникальный"
+
+#: components/number.inc:190
+msgid "Step"
+msgstr "Шаг"
+
+#: components/grid.inc:128
+msgid "Randomize Options"
+msgstr ""
+"Расположить варианты в случайном "
+"порядке"
+
+#: components/grid.inc:130
+msgid ""
+"Randomizes the order of options on the top when they are displayed in "
+"the form."
+msgstr ""
+"Располагать варианты  в случайном "
+"порядке при отображении их в форме."
+
+#: components/grid.inc:135
+msgid "Randomize Questions"
+msgstr ""
+"Расположить вопросы в случайном "
+"порядке"
+
+#: components/grid.inc:137
+msgid ""
+"Randomize the order of the questions on the side when they are "
+"displayed in the form."
+msgstr ""
+"Располагать вопросы в случайном "
+"порядке при отображении их в форме."
+
+#: webform.module:765
+msgid "Allows creation of grid questions, denoted by radio buttons."
+msgstr ""
+"Позволяет создавать сетку вопросов, "
+"отмеченных радиокнопками."
+
+#: includes/webform.components.inc:627
+msgid ""
+"The field key %field_key is invalid. Please include only lowercase "
+"alphanumeric characters and underscores."
+msgstr ""
+"Ключ поля %field_key не корректен. "
+"Используйте только буквенные и "
+"цифровые символы нижнего регистра и "
+"нижнее подчеркивание."
+
+#: templates/webform-submission-navigation.tpl.php:20,22
+msgid "Previous submission"
+msgstr "Предыдущая запись"
+
+#: templates/webform-submission-navigation.tpl.php:26,28
+msgid "Next submission"
+msgstr "Следующая запись"
+
+#: templates/webform-submission-information.tpl.php:20
+msgid "Submitted by !name"
+msgstr "Отправитель: !name"
+
+#: includes/webform.components.inc:173
+msgid "New component name"
+msgstr "Новое название компонента"
+
+#: includes/webform.components.inc:336
+msgid "The component positions and mandatory values have been updated."
+msgstr ""
+"Значения обязательности заполнения и "
+"расположения компонентов были "
+"обновлены"
+
+#: includes/webform.components.inc:665
+msgid "Component %name cloned."
+msgstr "Компонент %name клонирован."
+
+#: includes/webform.components.inc:669
+msgid "Component %name updated."
+msgstr "Компонент %name обновлен."
+
+#: includes/webform.components.inc:673
+msgid "New component %name added."
+msgstr "Новый компонент %name добавлен."
+
+#: includes/webform.components.inc:706
+msgid "Delete the %name fieldset?"
+msgstr "Удалить группу полей %namе?"
+
+#: includes/webform.components.inc:707
+msgid ""
+"This will immediately delete the %name fieldset and all children "
+"elements within %name from the %webform webform. This cannot be "
+"undone."
+msgstr ""
+"Это действие приведет к "
+"немедлительному удалению группы "
+"полей %name  и дочерних элементов %name из "
+"опросника %webform. Его невозможно "
+"отменить."
+
+#: includes/webform.components.inc:710
+msgid "Delete the %name component?"
+msgstr "Удалить компонент %name?"
+
+#: includes/webform.components.inc:711
+msgid ""
+"This will immediately delete the %name component from the %webform "
+"webform. This cannot be undone."
+msgstr ""
+"Будет удален компонент %name из "
+"опросника %webform. Действие нельзя будет "
+"вернуть."
+
+#: includes/webform.components.inc:725
+msgid "Component %name deleted."
+msgstr "Компонент %name удален."
+
+#: webform.module:103
+msgid "Webform confirmation"
+msgstr "Подтверждение опросника"
+
+#: webform.module:122
+msgid "Form components"
+msgstr "Компоненты формы"
+
+#: webform.module:294; views/webform.views.inc:183,212
+msgid "Webform submission"
+msgstr "Отправленные формы"
+
+#: includes/webform.pages.inc:203
+msgid "Show complete form in teaser"
+msgstr "Показать полную форму в анонсе"
+
+#: includes/webform.pages.inc:205
+msgid "Display the entire form in the teaser display of this node."
+msgstr ""
+"Показать полную форму в анонсе этого "
+"материала."
+
+#: includes/webform.pages.inc:227
+msgid "Submit button text"
+msgstr ""
+"Название кнопки для добавления "
+"информации."
+
+#: includes/webform.pages.inc:229
+msgid ""
+"By default the submit button on this form will have the label "
+"<em>Submit</em>. Enter a new title here to override the default."
+msgstr ""
+"По умолчанию в этой форме кнопка "
+"добавления информации будет "
+"называется <em>Отправить</em>.  Для "
+"изменения названия по умолчанию "
+"введите новое название здесь."
+
+#: webform.module:1410
+msgid ""
+"The new webform %title has been created. Add new fields to your "
+"webform with the form below."
+msgstr ""
+"Создан новый опросник %title. С помощью "
+"формы, расположенной ниже, добавьте в "
+"него новые поля."
+
+#: templates/webform-submission-information.tpl.php:19
+msgid "Form: !form"
+msgstr "Форма: !form"
+
+#: templates/webform-confirmation.tpl.php:23
+msgid "Thank you, your submission has been received."
+msgstr "Спасибо, ваша запись получена."
+
+#: templates/webform-mail.tpl.php:34
+msgid "The results of this submission may be viewed at:"
+msgstr ""
+"Результаты могут быть просмотрены "
+"тут:"
+
+#: components/time.inc:261
+msgid "%field field is required."
+msgstr "Необходимо указать %field."
+
+#: components/email.inc:75; components/textarea.inc:63,72; components/textfield.inc:64
+msgid "Leaving blank will use the default size."
+msgstr ""
+"Оставьте пустым, чтобы использовать "
+"размер по умолчанию."
+
+#: components/email.inc:198
+msgid "%value is not a valid email address."
+msgstr ""
+"Введён неверный адрес:  '%value'. "
+"Исправьте адрес email."
+
+#: includes/webform.components.inc:558
+msgid "Is one of"
+msgstr "Любые:"
+
+#: includes/webform.components.inc:559
+msgid "Is not one of"
+msgstr "Не:"
+
+#: includes/webform.components.inc:566
+msgid "Values"
+msgstr "Значения"
+
+#: components/file.inc:75
+msgid "Allowed file extensions"
+msgstr "Допустимые расширения файлов"
+
+#: components/time.inc:76
+msgid "12-hour (am/pm)"
+msgstr "12-часовой (am/pm)"
+
+#: components/time.inc:76
+msgid "24-hour"
+msgstr "24-часа"
+
+#: webform.module:1794
+msgid "Full node"
+msgstr "Материал полностью"
+
+#: includes/webform.options.inc:73
+msgid "Alabama"
+msgstr "Алабама"
+
+#: includes/webform.options.inc:74
+msgid "Alaska"
+msgstr "Аляска"
+
+#: includes/webform.options.inc:76
+msgid "Arizona"
+msgstr "Аризона"
+
+#: includes/webform.options.inc:77
+msgid "Arkansas"
+msgstr "Арканзас"
+
+#: includes/webform.options.inc:78
+msgid "California"
+msgstr "Калифорния"
+
+#: includes/webform.options.inc:79
+msgid "Colorado"
+msgstr "Колорадо"
+
+#: includes/webform.options.inc:80
+msgid "Connecticut"
+msgstr "Коннектикут"
+
+#: includes/webform.options.inc:81
+msgid "Delaware"
+msgstr "Делавэр"
+
+#: includes/webform.options.inc:83
+msgid "Florida"
+msgstr "Флорида"
+
+#: includes/webform.options.inc:86
+msgid "Hawaii"
+msgstr "Гавайи"
+
+#: includes/webform.options.inc:87
+msgid "Idaho"
+msgstr "Айдахо"
+
+#: includes/webform.options.inc:88
+msgid "Illinois"
+msgstr "Иллинойс"
+
+#: includes/webform.options.inc:89
+msgid "Indiana"
+msgstr "Индиана"
+
+#: includes/webform.options.inc:91
+msgid "Kansas"
+msgstr "Канзас"
+
+#: includes/webform.options.inc:92
+msgid "Kentucky"
+msgstr "Кентукки"
+
+#: includes/webform.options.inc:93
+msgid "Louisiana"
+msgstr "Луизиана"
+
+#: includes/webform.options.inc:94
+msgid "Maine"
+msgstr "Мэн"
+
+#: includes/webform.options.inc:96
+msgid "Maryland"
+msgstr "Мэриленд"
+
+#: includes/webform.options.inc:97
+msgid "Massachusetts"
+msgstr "Массачусетс"
+
+#: includes/webform.options.inc:98
+msgid "Michigan"
+msgstr "Мичиган"
+
+#: includes/webform.options.inc:99
+msgid "Minnesota"
+msgstr "Миннесота"
+
+#: includes/webform.options.inc:100
+msgid "Mississippi"
+msgstr "Миссисипи"
+
+#: includes/webform.options.inc:101
+msgid "Missouri"
+msgstr "Миссури"
+
+#: includes/webform.options.inc:102
+msgid "Montana"
+msgstr "Монтана"
+
+#: includes/webform.options.inc:103
+msgid "Nebraska"
+msgstr "Небраска"
+
+#: includes/webform.options.inc:104
+msgid "Nevada"
+msgstr "Невада"
+
+#: includes/webform.options.inc:105
+msgid "New Hampshire"
+msgstr "Нью-Гемпшир"
+
+#: includes/webform.options.inc:106
+msgid "New Jersey"
+msgstr "Нью-Джерси"
+
+#: includes/webform.options.inc:107
+msgid "New Mexico"
+msgstr "Нью-Мексико"
+
+#: includes/webform.options.inc:108
+msgid "New York"
+msgstr "Нью-Йорк"
+
+#: includes/webform.options.inc:109
+msgid "North Carolina"
+msgstr "Северная Каролина"
+
+#: includes/webform.options.inc:110
+msgid "North Dakota"
+msgstr "Северная Дакота"
+
+#: includes/webform.options.inc:112
+msgid "Ohio"
+msgstr "Огайо"
+
+#: includes/webform.options.inc:113
+msgid "Oklahoma"
+msgstr "Оклахома"
+
+#: includes/webform.options.inc:114
+msgid "Oregon"
+msgstr "Орегон"
+
+#: includes/webform.options.inc:116
+msgid "Pennsylvania"
+msgstr "Пенсильвания"
+
+#: includes/webform.options.inc:118
+msgid "Rhode Island"
+msgstr "Род-Айленд"
+
+#: includes/webform.options.inc:119
+msgid "South Carolina"
+msgstr "Южная Каролина"
+
+#: includes/webform.options.inc:120
+msgid "South Dakota"
+msgstr "Южная Дакота"
+
+#: includes/webform.options.inc:121
+msgid "Tennessee"
+msgstr "Теннесси"
+
+#: includes/webform.options.inc:122
+msgid "Texas"
+msgstr "Техас"
+
+#: includes/webform.options.inc:123
+msgid "Utah"
+msgstr "Юта"
+
+#: includes/webform.options.inc:124
+msgid "Vermont"
+msgstr "Вермонт"
+
+#: includes/webform.options.inc:126
+msgid "Virginia"
+msgstr "Виргиния"
+
+#: includes/webform.options.inc:127
+msgid "Washington"
+msgstr "Вашингтон"
+
+#: includes/webform.options.inc:128
+msgid "West Virginia"
+msgstr "Западная Виргиния"
+
+#: includes/webform.options.inc:129
+msgid "Wisconsin"
+msgstr "Висконсин"
+
+#: includes/webform.options.inc:130
+msgid "Wyoming"
+msgstr "Вайоминг"
+
+#: includes/webform.report.inc:26
+msgid "Submissions for %user"
+msgstr "Записи для  %user"
+
+#: includes/webform.report.inc:257,933; templates/webform-results-submissions.tpl.php:25
+msgid ""
+"There are no submissions for this form. <a href=\"!url\">View this "
+"form</a>."
+msgstr ""
+"В этом опроснике нет записей. <a "
+"href=\"!url\">Просмотр опросника</a>."
+
+#: includes/webform.submissions.inc:361
+msgid "Submission deleted."
+msgstr "Запись удалена."
+
+#: includes/webform.admin.inc:25
+msgid "Available components"
+msgstr "Доступные компоненты"
+
+#: includes/webform.admin.inc:28
+msgid ""
+"These are the available field types for your installation of Webform. "
+"You may disable any of these components by unchecking its "
+"corresponding box. Only checked components will be available in "
+"existing or new webforms."
+msgstr ""
+"Это доступные для использования типы "
+"полей в Вашей версии установки модуля "
+"Опросник. Вы можете отключить любой из "
+"приведенных компонентов, сняв флажок. "
+"Только компоненты, отмеченные "
+"флажками, будут появляться в "
+"существующих или новых опросниках."
+
+#: includes/webform.admin.inc:46
+msgid "Default e-mail values"
+msgstr ""
+"Параметры электронного сообщения по "
+"умолчанию"
+
+#: includes/webform.admin.inc:55
+msgid ""
+"The default sender address for emailed webform results; often the "
+"e-mail address of the maintainer of your forms."
+msgstr ""
+"Адрес отправителя результатов по "
+"умолчанию; часто является адресом "
+"технического администратора вашей "
+"формы."
+
+#: includes/webform.admin.inc:62
+msgid ""
+"The default sender name which is used along with the default from "
+"address."
+msgstr ""
+"Имя отправителя по умолчанию, которое "
+"используется вместе с адресом по "
+"умолчанию."
+
+#: includes/webform.admin.inc:67
+msgid "Default subject"
+msgstr "Тема по умолчанию"
+
+#: includes/webform.admin.inc:69
+msgid "The default subject line of any e-mailed results."
+msgstr "Тема сообщения по умолчанию."
+
+#: includes/webform.admin.inc:106
+msgid "Allow cookies for tracking submissions"
+msgstr ""
+"Разрешить cookies для отслеживания "
+"заполнений"
+
+#: includes/webform.admin.inc:108
+msgid ""
+"<a href=\"http://www.wikipedia.org/wiki/HTTP_cookie\">Cookies</a> can "
+"be used to help prevent the same user from repeatedly submitting a "
+"webform. This feature is not needed for limiting submissions per user, "
+"though it can increase accuracy in some situations. Besides cookies, "
+"Webform also uses IP addresses and site usernames to prevent repeated "
+"submissions."
+msgstr ""
+"<a href=\"http://www.wikipedia.org/wiki/HTTP_cookie\">Cookies</a> "
+"может использоваться для "
+"предотвращения повторного "
+"заполненияопросника одним "
+"пользователем. Эта функция не нужна в "
+"случаях ограничения количества "
+"записей от одного пользователя, хотя "
+"может повысить точность в некоторых "
+"ситуациях. Кроме файлов cookies, Опросник "
+"также использует IP адреса и имена "
+"пользователей сайта для "
+"предотвращения повторных заполнений."
+
+#: webform.module:752
+msgid "Fieldsets allow you to organize multiple fields into groups."
+msgstr ""
+"Группы полей позволяют "
+"организовывать многочисленные поля в "
+"группы."
+
+#: webform.module:775
+msgid ""
+"A field which is not visible to the user, but is recorded with the "
+"submission."
+msgstr ""
+"Поле не видно пользователю, но "
+"сохраняется с записью."
+
+#: webform.module:788
+msgid "Displays text as HTML in the form; does not render a field."
+msgstr "Показывает текст в формате  HTML."
+
+#: views/webform.views.inc:157
+msgid "Edit link"
+msgstr "Ссылка на редактирование"
+
+#: views/webform.views.inc:167
+msgid "Delete link"
+msgstr "Ссылка на удаление"
+
+#: views/webform_handler_field_submission_link.inc:45
+msgid "Text to display"
+msgstr "Текст для показа"
+
+#: components/time.inc:269
+msgid "Entered %name is not a valid time."
+msgstr "Введенное время  %name не действительно."
+
+#: includes/webform.submissions.inc:370
+msgid "Submission #@sid"
+msgstr "Заполнение #@sid"
+
+#: webform.module:2541
+msgid "Submission updated."
+msgstr "Запись обновлена."
+
+#: includes/webform.report.inc:323
+msgid "Export format"
+msgstr "Формат экспорта"
+
+#: components/number.inc:439
+msgid "Sum"
+msgstr "Сумма"
+
+#: components/number.inc:138
+msgid "Decimal point"
+msgstr "Десятичный разделитель"
+
+#: views/webform.views.inc:147
+msgid "View link"
+msgstr "Ссылка \"Прочитать\""
+
+#: webform.module:832
+msgid "Textarea"
+msgstr "Текстовая область"
+
+#: components/date.inc:71; components/time.inc:68
+msgid "User timezone"
+msgstr "Часовой пояс пользователя"
+
+#: includes/webform.pages.inc:167
+msgid ""
+"These permissions affect which roles can submit this webform. It does "
+"not prevent access to the webform page. If needing to prevent access "
+"to the webform page entirely, use a content access module such as <a "
+"href=\"http://drupal.org/project/taxonomy_access\">Taxonomy Access</a> "
+"or <a href=\"http://drupal.org/project/node_privacy_byrole\">Node "
+"Privacy by Role</a>."
+msgstr ""
+"Эти права доступа регламентируют  "
+"пользователи какого статуса  имеют "
+"право заполнять данную  веб-форму. Они "
+"не закрывают доступ к странице в "
+"целом. Если необходимо полностью "
+"закрыть доступ к странице, то следует "
+"использовать модуль доступа к "
+"содержанию, например <a "
+"href=\"http://drupal.org/project/taxonomy_access\">Taxonomy Access</a> "
+"or <a href=\"http://drupal.org/project/node_privacy_byrole\">Node "
+"Privacy by Role</a>."
+
+#: includes/webform.pages.inc:181
+msgid "Roles that can submit this webform"
+msgstr ""
+"Роли пользователей, которые имеют "
+"право заполнять этот опросник"
+
+#: webform.module:1608,1614
+msgid "Submissions for this form are closed."
+msgstr "В эту форму нельзя добавить запись."
+
+#: webform.module:1624
+msgid ""
+"You must <a href=\"!login\">login</a> or <a "
+"href=\"!register\">register</a> to view this form."
+msgstr ""
+"Для просмотра этой формы необходимо <a "
+"href=\"!login\">войти</a> или <a "
+"href=\"!register\">зарегистрироваться</a>"
+
+#: webform.module:1629
+msgid "You do not have permission to view this form."
+msgstr ""
+"У вас нет разрешения на просмотр этой "
+"формы."
+
+#: webform.module:1637
+msgid "You have submitted this form the maximum number of times (@count)."
+msgstr ""
+"Вы заполнили эту форму максимальное "
+"количество раз(@count)."
+
+#: webform.module:1640,1659
+msgid "You have already submitted this form."
+msgstr "Вы уже заполнили эту форму."
+
+#: webform.module:1643,1652
+msgid "You may not submit another entry at this time."
+msgstr "Сейчас вы не можете ввести данные."
+
+#: webform.module:1659,1662
+msgid "<a href=\"!url\">View your previous submissions</a>."
+msgstr ""
+"<a href=\"!url\">Посмотреть свои предыдущие "
+"записи</a>."
+
+#: includes/webform.report.inc:719
+msgid "Submission Details"
+msgstr "Детали записи"
+
+#: includes/webform.report.inc:683
+msgid "SID"
+msgstr "SID"
+
+#: includes/webform.pages.inc:255
+msgid "The entered email address %address is not a valid address."
+msgstr ""
+"Указанный  электронный адрес %address  не "
+"действителен."
+
+#: components/number.inc:126,140; includes/webform.admin.inc:144; includes/webform.report.inc:334
+msgid "Comma (,)"
+msgstr "Запятая (,)"
+
+#: includes/webform.admin.inc:145; includes/webform.report.inc:335
+msgid "Tab (\\t)"
+msgstr "Табуляция (\\t)"
+
+#: includes/webform.admin.inc:146; includes/webform.report.inc:336
+msgid "Semicolon (;)"
+msgstr "Точка с запятой (;)"
+
+#: includes/webform.admin.inc:147; includes/webform.report.inc:337
+msgid "Colon (:)"
+msgstr "Двоеточие (:)"
+
+#: includes/webform.admin.inc:148; includes/webform.report.inc:338
+msgid "Pipe (|)"
+msgstr "Вертикальная черта (|)"
+
+#: components/number.inc:127,141; includes/webform.admin.inc:149; includes/webform.report.inc:339
+msgid "Period (.)"
+msgstr "Точка (.)"
+
+#: components/number.inc:128; includes/webform.admin.inc:150; includes/webform.report.inc:340
+msgid "Space ( )"
+msgstr "Пробел ( )"
+
+#: components/date.inc:87
+msgid "Use a textfield for year"
+msgstr ""
+"Для введения года использовать "
+"текстовое поле"
+
+#: components/date.inc:89
+msgid ""
+"If checked, the generated date field will use a textfield for the "
+"year. Otherwise it will use a select list."
+msgstr ""
+"При наличии флажка, дата будет браться "
+"из соответствующего поля. В противном "
+"случае будет предлагаться список "
+"множественного выбора."
+
+#: components/date.inc:290
+msgid "Entered !name is not a valid date."
+msgstr "Введенная дата  !name не действительная."
+
+#: components/number.inc:87; components/textfield.inc:74
+msgid "Examples: $, #, -."
+msgstr "Примеры: $, #, -."
+
+#: components/number.inc:97; components/textfield.inc:84
+msgid "Examples: lb, kg, %."
+msgstr "Примеры: lb, kg, %."
+
+#: webform.module:132
+msgid "Form settings"
+msgstr "Настройки формы"
+
+#: webform.module:3176; includes/webform.admin.inc:68
+msgid "Form submission from: %title"
+msgstr "Заполнен опросник: %title"
+
+#: webform.module:3243
+msgid ""
+"You may use special tokens in this field that will be replaced with "
+"dynamic values."
+msgstr ""
+"В этом поле вы можете использовать "
+"специальные маркеры, которые будут "
+"заменены значениями."
+
+#: webform.module:3257
+msgid "Token values"
+msgstr "Значения маркеров"
+
+#: includes/webform.options.inc:82
+msgid "District of Columbia"
+msgstr "Округ Колумбия"
+
+#: webform.module:3207
+msgid "Node tokens"
+msgstr "Маркеры материалов"
+
+#: components/textarea.inc:79
+msgid "Resizable"
+msgstr "Изменение размера"
+
+#: includes/webform.pages.inc:196
+msgid "Available as block"
+msgstr "Доступно как Блок"
+
+#: includes/webform.export.inc:20
+msgid "Delimited text"
+msgstr "Текст с разделителями"
+
+#: includes/webform.export.inc:21
+msgid "A plain text file delimited by commas, tabs, or other characters."
+msgstr ""
+"Файл с открытым текстом, разделенным "
+"запятыми, вкладками или другими "
+"символами."
+
+#: includes/webform.export.inc:25
+msgid "Microsoft Excel"
+msgstr "Microsoft Excel"
+
+#: includes/webform.export.inc:26
+msgid "A file readable by Microsoft Excel."
+msgstr "Файл, открываемый с помощью Microsoft Excel."
+
+#: includes/webform.report.inc:330
+msgid "Delimited text format"
+msgstr "Формат текста с разделителями"
+
+#: includes/webform.admin.inc:141; includes/webform.report.inc:331
+msgid ""
+"This is the delimiter used in the CSV/TSV file when downloading "
+"Webform results. Using tabs in the export is the most reliable method "
+"for preserving non-latin characters. You may want to change this to "
+"another character depending on the program with which you anticipate "
+"importing results."
+msgstr ""
+"Это разделитель, используемый для "
+"файлов CSV/TSV при закачивании "
+"результатов  Webform.  Использование "
+"закладок в экспорте – наиболее "
+"надежный способ сохранения "
+"нелатинских букв. Вы можете заменить "
+"их другими буквами, в зависимости от "
+"используемой программы."
+
+#: includes/webform.admin.inc:133
+msgid "Default export format"
+msgstr "Формат экпорта по умолчанию"
+
+#: includes/webform.admin.inc:140
+msgid "Default export delimiter"
+msgstr "Экпортный разделитель по умолчанию"
+
+#: components/file.inc:471
+msgid "Filesize (KB)"
+msgstr "Размер файла (КБ)"
+
+#: webform.module:1974,2349
+msgid "Save Draft"
+msgstr "Сохранить черновик"
+
+#: views/webform_handler_field_is_draft.inc:16
+msgid "draft"
+msgstr "черновик"
+
+#: includes/webform.components.inc:497
+msgid ""
+"Optional. You may organize your form by placing this component inside "
+"another fieldset."
+msgstr ""
+"Опционально. Вы можете группировать "
+"компоненты в логические наборы, "
+"группируя их."
+
+#: components/date.inc:71; components/time.inc:68
+msgid "Website timezone"
+msgstr "Часовой пояс веб-сайта"
+
+#: webform.module:751
+msgid "Fieldset"
+msgstr "Группа полей"
+
+#: includes/webform.components.inc:311
+msgid "When adding a new component, the name field is required."
+msgstr ""
+"Когда добавляется новый компонент, то "
+"поле имени обязательно."
+
+#: includes/webform.pages.inc:80
+msgid "Redirect URL"
+msgstr "Перенаправление на URL"
+
+#: includes/webform.emails.inc:97; includes/webform.submissions.inc:524
+msgid "E-mail to"
+msgstr "E-mail для"
+
+#: views/webform.views.inc:43,46
+msgid "Webform submissions"
+msgstr "Отправленные формы"
+
+#: includes/webform.report.inc:122
+msgid "Show !count results per page."
+msgstr ""
+"Отображать !count результатов на "
+"страницу."
+
+#: includes/webform.report.inc:125
+msgid "Showing all results."
+msgstr "Отображены все результаты."
+
+#: includes/webform.report.inc:128
+msgid "@total results total."
+msgstr "Всего: @total."
+
+#: includes/webform.admin.inc:156
+msgid "Submission access control"
+msgstr "Система контроля доступа"
+
+#: includes/webform.admin.inc:158
+msgid "Select the user roles that may submit each individual webform"
+msgstr ""
+"Выберите роли, которые может "
+"использовать отдельную webform"
+
+#: includes/webform.admin.inc:159
+msgid "Disable Webform submission access control"
+msgstr "Отключить контроля доступа для Webform"
+
+#: includes/webform.admin.inc:162
+msgid ""
+"By default, the configuration form for each webform allows the "
+"administrator to choose which roles may submit the form. You may want "
+"to allow users to always submit the form if you are using a separate "
+"node access module to control access to webform nodes themselves."
+msgstr ""
+"По умолчанию в конфигурации для "
+"каждого вида webform администратору "
+"позволяет выбрать, какие роли могут "
+"заполнять  форму. Возможно, Вы "
+"захотите, чтобы пользователи могли "
+"всегда заполнять форму, или вы можете "
+"использовать отдельный модуль для "
+"ограничения доступа к материалам webform."
+
+#: components/select.inc:232
+msgid ""
+"Options within the select list must be unique. The following keys have "
+"been used multiple times:"
+msgstr ""
+"Функции в списке выбора должны быть "
+"уникальными. Следующие ключи были "
+"использованы несколько раз:"
+
+#: components/textarea.inc:80
+msgid "Make this field resizable by the user."
+msgstr ""
+"Сделать это поле c изменяемыми "
+"пользователем размерами."
+
+#: webform.module:3209
+msgid "The node ID."
+msgstr "ID материала"
+
+#: components/file.inc:159
+msgid "Progress indicator"
+msgstr "Индикатор прогресса"
+
+#: components/file.inc:162
+msgid "Bar with progress meter"
+msgstr ""
+"Полоса с указателем прогресса "
+"выполнения"
+
+#: components/file.inc:161
+msgid "Throbber"
+msgstr ""
+"Троббер (индикатор без указания "
+"прогресса выполнения)"
+
+#: views/webform.views.inc:52,59
+msgid "Sid"
+msgstr "Sid"
+
+#: views/webform.views.inc:53
+msgid "The submission ID of the submission."
+msgstr "ID результат."
+
+#: views/webform.views.inc:113
+msgid "The date this submission was submitted."
+msgstr ""
+"Дата, когда данный результат был "
+"получен."
+
+#: views/webform.views.inc:129,136
+msgid "Remote address"
+msgstr "Внешний адрес"
+
+#: views/webform.views.inc:130
+msgid "The remote IP address of the user that submitted this submission."
+msgstr ""
+"IP-адрес пользователя, отправивший "
+"данный результат."
+
+#: views/webform.views.inc:148
+msgid "Provide a simple link to view the submission."
+msgstr ""
+"Предоставляет простую ссылку для "
+"просмотра результатов."
+
+#: views/webform.views.inc:158
+msgid "Provide a simple link to edit the submission."
+msgstr ""
+"Предоставляет простую ссылку для "
+"редактирования результатов."
+
+#: views/webform.views.inc:168
+msgid "Provide a simple link to delete the submission."
+msgstr ""
+"Предоставляет простую ссылку для "
+"удаления результата."
+
+#: views/webform.views.inc:202,225
+msgid "Webform submission count"
+msgstr "Колличество результатов"
+
+#: views/webform.views.inc:203
+msgid "The number of webform submissions on this node."
+msgstr ""
+"Колличество результатов отправки webform "
+"для данного материала."
+
+#: views/webform.views.inc:226
+msgid "The number of webform submissions for this user."
+msgstr ""
+"Колличество результатов отправки webform "
+"для данного пользователя."
+
+#: views/webform.views.inc:256
+msgid "Webform form body"
+msgstr "Основной текст формы webform"
+
+#: webform.module:144
+msgid "E-mails"
+msgstr "Электронные адреса"
+
+#: includes/webform.pages.inc:163
+msgid "Submission access"
+msgstr "Доступ к результатам"
+
+#: includes/webform.admin.inc:122
+msgid "E-mail address format"
+msgstr "Формат e-mail адреса"
+
+#: includes/webform.admin.inc:124
+msgid "Long format: \"Example Name\" &lt;name@example.com&gt;"
+msgstr ""
+"Полный формат: \"Пример Имени\" "
+"&lt;name@example.com&gt;"
+
+#: includes/webform.admin.inc:125
+msgid "Short format: name@example.com"
+msgstr "Краткий формат name@example.com"
+
+#: webform.module:3321
+msgid "Value of !component"
+msgstr "Значение для !component"
+
+#: webform.module:3337,3394
+msgid "Value of \"!component\""
+msgstr "Значение для \"!component\""
+
+#: webform.module:154
+msgid "Edit e-mail settings"
+msgstr "Редактировать настройки e-mail"
+
+#: webform.module:163
+msgid "Delete e-mail settings"
+msgstr "Удалить настройки e-mail"
+
+#: includes/webform.emails.inc:53
+msgid "Component value"
+msgstr "Значение компонента"
+
+#: includes/webform.emails.inc:113
+msgid "Currently not sending e-mails, add an e-mail recipient below."
+msgstr ""
+"В данный момент e-mail не отправляются, "
+"добавьте получателей e-mail ниже."
+
+#: includes/webform.emails.inc:136
+msgid "email@example.com"
+msgstr "email@example.com"
+
+#: includes/webform.emails.inc:189
+msgid ""
+"Form submissions will be e-mailed to this address. Any email, select, "
+"or hidden form element may be selected as the recipient address. "
+"Multiple e-mail addresses may be separated by commas."
+msgstr ""
+"Почтовый адрес, на который будут "
+"отправляться письма. При вводе "
+"нескольких адресов, разделяйте их "
+"запятыми. Если оставить это поле "
+"незаполненным, то письма отправляться "
+"не будут."
+
+#: includes/webform.emails.inc:199
+msgid ""
+"Any email, select, or hidden form element may be selected as the "
+"sender's e-mail address."
+msgstr ""
+"Любое поле e-mail, список выбора или "
+"скрытое поле могут быть использованы "
+"как e-mail адрес отправителя сообщения."
+
+#: includes/webform.emails.inc:204
+msgid ""
+"Any textfield, select, or hidden form element may be selected as the "
+"sender's name for e-mails."
+msgstr ""
+"Любое текстовое поле, список выбора "
+"или скрытое поле могут быть "
+"использованы как имя отправителя e-mail "
+"сообщения."
+
+#: includes/webform.emails.inc:249
+msgid "An e-mail template can customize the display of e-mails."
+msgstr ""
+"Через e-mail шабло можно настроить "
+"отображение e-mail сообщений."
+
+#: includes/webform.emails.inc:316
+msgid "Save e-mail settings"
+msgstr "Сохранить настройки e-mail"
+
+#: includes/webform.emails.inc:375
+msgid "When adding a new custom e-mail, the e-mail field is required."
+msgstr ""
+"Когда добавлен новый "
+"пользовательский e-mail, поле e-mail "
+"становится обязательным"
+
+#: includes/webform.emails.inc:446
+msgid "Email settings added."
+msgstr "Настройки e-mail добавлены"
+
+#: includes/webform.emails.inc:450
+msgid "Email settings updated."
+msgstr "Настройки e-mail обновлены."
+
+#: includes/webform.emails.inc:477
+msgid "Delete e-mail settings?"
+msgstr "Удалить настройки e-mail?"
+
+#: includes/webform.emails.inc:496
+msgid "E-mail settings deleted."
+msgstr "Настройки e-mail удалены."
+
+#: templates/webform-mail.tpl.php:22
+msgid "Submitted on %date"
+msgstr "Отправлено %date"
+
+#: templates/webform-mail.tpl.php:25
+msgid "Submitted by user: %username"
+msgstr "Отправлено пользователем: %username"
+
+#: templates/webform-mail.tpl.php:27
+msgid "Submitted by anonymous user: [%ip_address]"
+msgstr ""
+"Отправлено анонимным пользователем: "
+"[%ip_address]"
+
+#: includes/webform.pages.inc:221
+msgid "Show the notification about previous submissions."
+msgstr ""
+"Показать уведомление об отправленном "
+"до этого результате."
+
+#: includes/webform.options.inc:17
+msgid "Days of the week"
+msgstr "Дни недели"
+
+#: components/file.inc:141
+msgid "Upload destination"
+msgstr "Хранилище"
+
+#: components/date.inc:61
+msgid ""
+"Accepts any date in any <a "
+"href=\"http://www.gnu.org/software/tar/manual/html_chapter/Date-input-formats.html\">GNU "
+"Date Input Format</a>. Strings such as today, +2 months, and Dec 9 "
+"2004 are all valid."
+msgstr ""
+"Принимает дату в любом <a "
+"href=\"http://www.gnu.org/software/tar/manual/html_chapter/Date-input-formats.html\"> "
+"GNU Date входном формате </a>. Строки такие "
+"как today, + 2 months, и Dec 9 2004 доступны."
+
+#: components/time.inc:58
+msgid ""
+"Accepts a time in any <a "
+"href=\"http://www.gnu.org/software/tar/manual/html_chapter/Date-input-formats.html\">GNU "
+"Date Input Format</a>. Strings such as now, +2 hours, and 10:30pm are "
+"all valid."
+msgstr ""
+"Принимает время в любом <a "
+"href=\"http://www.gnu.org/software/tar/manual/html_chapter/Date-input-formats.html\"> "
+"GNU Date входном формате </a>. Строки такие "
+"как now, + 2 hourse, и 10:30 pm доступны."
+
+#: webform.module:3834,3851
+msgid "@name form"
+msgstr "форма @name"
+
+#: includes/webform.components.inc:538
+msgid "Conditional rules"
+msgstr "Условные выражения"
+
+#: includes/webform.report.inc:47
+msgid "@sid (draft)"
+msgstr "@sid (черновик)"
+
+#: webform.module:743
+msgid "A special textfield that accepts e-mail addresses."
+msgstr ""
+"Специальное текстовое поле, "
+"принимающее e-mail адреса."
+
+#: webform.module:862
+msgid "Allow users to upload files of configurable types."
+msgstr ""
+"Разрешить пользователям загружать "
+"файлы указанных типов."
+
+#: webform.module:809
+msgid "Page break"
+msgstr "Разрыв страницы"
+
+#: webform.module:810
+msgid "Organize forms into multiple pages."
+msgstr "Организация формы в несколько страниц"
+
+#: webform.module:822
+msgid "Select options"
+msgstr "Элементы списка"
+
+#: components/file.inc:392
+msgid "no upload"
+msgstr "не загружать"
+
+#: includes/webform.components.inc:1028
+msgid "Include all components"
+msgstr "Включить все компоненты"
+
+#: includes/webform.emails.inc:194
+msgid ""
+"Any textfield, select, or hidden form element may be selected as the "
+"subject for e-mails."
+msgstr ""
+"Любое текстовое поле, список выбора "
+"или скрытое поле могут быть "
+"использованы как тема e-mail сообщения."
+
+#: includes/webform.emails.inc:293
+msgid "Included e-mail values"
+msgstr "Включенные значения e-mail"
+
+#: includes/webform.report.inc:29
+msgid "Your submissions"
+msgstr "Ваши результаты"
+
+#: includes/webform.report.inc:346
+msgid "Select list options"
+msgstr "Элементы списка выбора"
+
+#: includes/webform.report.inc:364
+msgid "Select list format"
+msgstr "Формат списка выбора"
+
+#: includes/webform.report.inc:366
+msgid "Separate"
+msgstr "Разделить"
+
+#: includes/webform.report.inc:376
+msgid "Submission Number"
+msgstr "Номер результата"
+
+#: includes/webform.report.inc:377
+msgid "Submission ID"
+msgstr "ID результата"
+
+#: includes/webform.report.inc:616
+msgid "Option A"
+msgstr "Вариант A"
+
+#: includes/webform.report.inc:616
+msgid "Option B"
+msgstr "Вариант B"
+
+#: includes/webform.report.inc:616
+msgid "Option C"
+msgstr "Вариант C"
+
+#: includes/webform.report.inc:629
+msgid "My select list"
+msgstr "Мой список выбора"
+
+#: components/select.inc:25,358,661,711
+msgid "Other..."
+msgstr "Другой..."
+
+#: includes/webform.emails.inc:70,230
+msgid "No available components"
+msgstr "Нет доступных компонентов"
+
+#: webform.module:24
+msgid "To add one, create a !types piece of content."
+msgstr "Что бы добавить, создайте материал !types"
+
+#: webform.module:27,39; includes/webform.admin.inc:278
+msgid "Webform is currently not enabled on any content types."
+msgstr ""
+"Webform в данный момент не подключены ни к "
+"одному типу материалов."
+
+#: webform.module:32
+msgid ""
+"This page lists all of the content on the site that may have a webform "
+"attached to it."
+msgstr ""
+"Этот список страниц содержимого, "
+"которые могут иметь вложенные в них "
+"опросники."
+
+#: webform.module:38
+msgid "Webform-enabled piece of content"
+msgstr "Часть контента со включенным webform"
+
+#: webform.module:39; includes/webform.admin.inc:278
+msgid ""
+"Visit the <a href=\"!url\">Webform settings</a> page and enable "
+"Webform on at least one content type."
+msgstr ""
+"Посетите <a href=\"!url\">страницу настроек "
+"Webform</a> и включите Webform как минимум для "
+"одного типа материалов."
+
+#: webform.module:91
+msgid "Webform settings"
+msgstr "Настройки Webform"
+
+#: components/email.inc:93; components/number.inc:152; components/textfield.inc:103
+msgid ""
+"Check that all entered values for this field are unique. The same "
+"value is not allowed to be used twice."
+msgstr ""
+"Установите галочку для проверки "
+"уникальности этого поля. Проверяет "
+"все поля на уникальность, не допускает "
+"одинаковых значений в полях"
+
+#: components/textfield.inc:112
+msgid "Maximum length of the textfield value."
+msgstr ""
+"Максимальная длинна значения "
+"текстового поля."
+
+#: includes/webform.admin.inc:17
+msgid "Webform-enabled content types"
+msgstr ""
+"Типы материалов для которых включен "
+"Webform"
+
+#: includes/webform.admin.inc:282
+msgid ""
+"There are currently no webforms on your site. Create a !types piece of "
+"content."
+msgstr ""
+"В данный момент на вашем сайте нет ни "
+"одной webform. Создайте материал !types"
+
+#: includes/webform.pages.inc:38
+msgid "Confirmation message"
+msgstr "Сообщение о подтверждении"
+
+#: includes/webform.pages.inc:81
+msgid "URL to redirect the user to upon successful submission."
+msgstr ""
+"URL, куда будет перенаправлен "
+"пользователь после отправки "
+"результата формы."
+
+#: includes/webform.pages.inc:268
+msgid "The entered URL is not a valid address."
+msgstr ""
+"Указанный URL не является верным "
+"адресом"
+
+#: includes/webform.pages.inc:349
+msgid "The form settings have been updated."
+msgstr "Настройки формы были обновлены."
+
+#: webform.module:1621
+msgid "You must <a href=\"!login\">login</a> to view this form."
+msgstr ""
+"Вы должны <a href=\"!login\">войти</a> для "
+"просмотра этой формы."
+
+#: webform.module:489
+msgid "Access all webform results"
+msgstr "Доступ ко всем результатам опросника"
+
+#: includes/webform.emails.inc:215
+msgid "Default: %value"
+msgstr "По умолчанию: %value"
+
+#: components/select.inc:120
+msgid "Customize keys (Advanced)"
+msgstr ""
+"Настроить ключи (для продвинутых "
+"пользователей)"
+
+#: includes/webform.components.inc:353
+msgid "Edit component: @name"
+msgstr "Редактировать компонент: @name"
+
+#: components/select.inc:68
+msgid "Load a pre-built option list"
+msgstr ""
+"Загрузить ранее созданный список "
+"настроек."
+
+#: components/select.inc:73
+msgid ""
+"Use a pre-built list of options rather than entering options manually. "
+"Options will not be editable if using pre-built list."
+msgstr ""
+"Использовать ранее созданный список "
+"настроек вместо установленных "
+"вручную. Настройки должны быть не "
+"редактируемы если используется "
+"подготовленный список."
+
+#: includes/webform.options.inc:29
+msgid "US states"
+msgstr "Штаты США"
+
+#: includes/webform.options.inc:111
+msgid "Northern Marianas Islands"
+msgstr "Северные Марианские острова"
+
+#: components/date.inc:78
+msgid "Enable popup calendar"
+msgstr "Включить popup календарь"
+
+#: components/date.inc:80
+msgid "Enable a JavaScript date picker next to the date field."
+msgstr ""
+"Включить выбор даты на основе JavaScript "
+"для данного поля."
+
+#: templates/webform-calendar.tpl.php:8
+msgid "Open popup calendar"
+msgstr "Открыть popup календарь"
+
+#: components/time.inc:86
+msgid "5 minute"
+msgstr "5 минут"
+
+#: components/time.inc:88
+msgid "15 minute"
+msgstr "15 минут"
+
+#: includes/webform.emails.inc:275
+msgid "Send e-mail as HTML"
+msgstr "Отправить e-mail как HTML"
+
+#: includes/webform.emails.inc:282
+msgid "Include files as attachments"
+msgstr "Включить файл как вложение"
+
+#: views/webform_handler_field_node_link_edit.inc:25
+msgid "edit webform"
+msgstr "редактировать опросник"
+
+#: webform.module:1694
+msgid "Webform: !title"
+msgstr "Опросник: !title"
+
+#: webform.module:1793
+msgid "Form only"
+msgstr "Только форма"
+
+#: webform.module:1797
+msgid ""
+"The display mode determines how much of the webform to show within the "
+"block."
+msgstr ""
+"Режим отображения определяет как "
+"опросник будет отображаться в блоке."
+
+#: includes/webform.pages.inc:65
+msgid "Redirection location"
+msgstr "Местоположение перенаправления"
+
+#: includes/webform.pages.inc:73
+msgid "Confirmation page"
+msgstr "Страница подтверждения"
+
+#: includes/webform.pages.inc:75
+msgid "No redirect (reload current page)"
+msgstr ""
+"Нет редиректа (перезагрузка текущей "
+"страницы)"
+
+#: includes/webform.pages.inc:198
+msgid "If enabled this webform will be available as a block."
+msgstr ""
+"Если включено этот опросник будет "
+"доступен как блок."
+
+#: includes/webform.pages.inc:265
+msgid "A valid URL is required for custom redirection."
+msgstr ""
+"Правильный URL адрес требуется для "
+"настраиваемого перенаправления."
+
+#: includes/webform.components.inc:393
+msgid ""
+"Enter a machine readable key for this form element. May contain only "
+"alphanumeric characters and underscores. This key will be used as the "
+"name attribute of the form element. This value has no effect on the "
+"way data is saved, but may be helpful if doing custom form processing."
+msgstr ""
+"Введите машинопонятный ключ для этого "
+"элемента формы. Может содержать "
+"латинские буквы, цифры и нижнее "
+"подчеркивание. Это поле не влияет на "
+"дальнейший его вывод, но может "
+"понадобиться для темизации или "
+"валидации формы."
+
+#: includes/webform.pages.inc:152
+msgid "Status of this form"
+msgstr "Статус этой формы"
+
+#: includes/webform.pages.inc:209
+msgid "Show \"Save draft\" button"
+msgstr "Показать \"Сохранить черновик\" кнопку"
+
+#: includes/webform.pages.inc:215
+msgid "Automatically save as draft between pages"
+msgstr ""
+"Автоматически сохранять черновик "
+"между страницами"
+
+#: webform.module:920,339; includes/webform.submissions.inc:468
+msgid "Resend e-mails"
+msgstr "Повторить email"
+
+#: webform.module:3196
+msgid "Basic tokens"
+msgstr "Основные маркеры"
+
+#: webform.module:3215
+msgid "Special tokens"
+msgstr "Специальные маркеры"
+
+#: includes/webform.admin.inc:114
+msgid "Include webform forms in search index"
+msgstr "Включать webform формы в поисковый индекс"
+
+#: components/time.inc:87
+msgid "10 minute"
+msgstr "10 минут"
+
+#: components/time.inc:89
+msgid "30 minute"
+msgstr "30 минут"
+
+#: includes/webform.report.inc:411
+msgid "All submissions"
+msgstr "Все заполнения"
+
+#: includes/webform.report.inc:413
+msgid "Only the latest"
+msgstr "Только последние"
+
+#: includes/webform.report.inc:414
+msgid "All submissions starting from"
+msgstr "Все заполнения, начиная с"
+
+#: views/webform.views.inc:78
+msgid "Webform Node"
+msgstr "Материал опросника"
+
+#: views/webform.views.inc:190,219
+msgid "Webform Submission"
+msgstr "Заполнение опросника"
+
+#: includes/webform.pages.inc:89
+msgid "Total submissions limit"
+msgstr "Всего заполнений"
+
+#: includes/webform.pages.inc:121
+msgid "Per user submission limit"
+msgstr "Лимит заполнений на пользователя"
+
+#: includes/webform.report.inc:573
+msgid "@count total"
+msgstr "всего @count"
+
+#: includes/webform.report.inc:579
+msgid "@count new since @date"
+msgstr "@count новых с @date"
+
+#: includes/webform.report.inc:590
+msgid "Only the latest !number submissions"
+msgstr "Только последние !number заполнений"
+
+#: components/number.inc:422
+msgid "sample"
+msgstr "образец"
+
+#: components/number.inc:430
+msgid "population"
+msgstr "население"
+
+#: components/number.inc:512
+msgid "% of !description"
+msgstr "% из !description"
+
+#: components/number.inc:510
+msgid "Boundary"
+msgstr "Граница"
+
+#: components/number.inc:516
+msgid "!low to !high"
+msgstr "!low к !high"
+
+#: components/number.inc:517
+msgid "Standard deviation (!sigma)"
+msgstr "Стандартное отклонение (!sigma)"
+
+#: components/number.inc:642
+msgid "Minimum must be numeric."
+msgstr "Минимум должен быть числовым."
+
+#: components/number.inc:657
+msgid "Maximum must be numeric."
+msgstr "Максимум должен быть числовым."
+
+#: components/number.inc:667
+msgid "Step must be numeric."
+msgstr "Шаг должен быть числовым."
+
+#: components/number.inc:671
+msgid "Step must have an integer value."
+msgstr "Шаг должен иметь целое значение."
+
+#: views/webform.views.inc:25
+msgid "The open or closed status of a webform."
+msgstr "Статус опросника закрыт/открыт."
+
+#: views/webform_handler_field_webform_status.inc:11
+msgid "Open/Closed"
+msgstr "Открыт/Закрыт"
+
+#: webform.module:3584
+msgid "Webform results"
+msgstr "Результаты опросника"
+
